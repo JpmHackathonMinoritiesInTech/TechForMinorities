@@ -30,7 +30,7 @@ button:hover{
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.60);
 }
 
-.buttons button{
+button{
     padding: 15px 32px;
     margin: 10px 0px;
     background-color: #003366;
