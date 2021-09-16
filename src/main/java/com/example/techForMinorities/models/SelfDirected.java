@@ -15,6 +15,7 @@ public class SelfDirected {
     private String resourceName;
     @Lob
     private String description;
+    @Lob
     private String url;
 
     public SelfDirected(String resourceName, String description, String url) {

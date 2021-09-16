@@ -17,6 +17,7 @@ public class Mentors {
     private String email;
     private String linkedIn;
     private String languages;
+    @Lob
     private String pathToField;
     @Lob
     private String bio;

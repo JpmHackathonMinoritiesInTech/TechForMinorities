@@ -15,6 +15,7 @@ public class InterviewHelp {
     private String resourceName;
     @Lob
     private String description;
+    @Lob
     private String url;
 
     public InterviewHelp(String resourceName, String description, String url) {
