@@ -1,5 +1,6 @@
 package com.example.techForMinorities;
 
+import com.example.techForMinorities.models.SelfDirected;
 import com.example.techForMinorities.repositories.BootcampInfoRepo;
 import com.example.techForMinorities.repositories.InterviewHelpRepo;
 import com.example.techForMinorities.repositories.MentorsRepo;
@@ -26,6 +27,10 @@ public class Populator implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception{
 
+        SelfDirected selfDirectedResource1 = new SelfDirected("Code Academy", "A site with some free" +
+                "options to get started, but you'll need to pay for Pro membership to delve into more advanced concepts.",
+                "https://www.codeacademy.com", "Free");
+        selfDirectedRepo.save(selfDirectedResource1);
 
     }
 }
