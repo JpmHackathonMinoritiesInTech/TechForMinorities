@@ -1,5 +1,6 @@
 package com.example.techForMinorities;
 
+import com.example.techForMinorities.models.BootcampInfo;
 import com.example.techForMinorities.models.InterviewHelp;
 import com.example.techForMinorities.models.SelfDirected;
 import com.example.techForMinorities.models.Mentors;
@@ -146,5 +147,17 @@ public class Populator implements CommandLineRunner {
         InterviewHelp interviewHelpMockInterview2 = new InterviewHelp("Pramp", "Paid: Professional Coaching and Mock Interviews",
                 "https://www.interviewbit.com/mock-interview/ ");
         interviewHelpRepo.save(interviewHelpMockInterview2);
+
+        BootcampInfo bootcampInfo1 = new BootcampInfo("2021 Best Coding Bootcamps you can join",
+                "Learn more what makes a bootcamp successful.",
+                "https://www.switchup.org/rankings/best-coding-bootcamps"
+                );
+        BootcampInfo bootcampInfo = new BootcampInfo("Are Coding Bootcamps worth it?",
+                "Learn more if coding bootcamp is best option for you",
+                "https://www.bestcolleges.com/bootcamps/guides/are-coding-bootcamps-worth-it/");
+
+        BootcampInfo bootcampInfo3 = new BootcampInfo("Why many people choose bootcamp?",
+                "Learn coding-controll your future",
+                "https://www.techelevator.com/?gclid=Cj0KCQjw1ouKBhC5ARIsAHXNMI-WwG4SNH4QLvtEOtaUI7Opr_JxIbRpAp4BAHF523-u682pTEN3WXkaAoLpEALw_wcB");
     }
 }
