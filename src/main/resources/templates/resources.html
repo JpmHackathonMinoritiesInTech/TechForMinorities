@@ -19,6 +19,11 @@
 </div>
 <div class="bootcamp-section">
     <h3 class="bootcamp-section-header">Bootcamp Overview</h3>
+    <ul th:each="bootcamp:${bootCampResources}">
+        <li th:text="${bootcamp.resourceName}"></li>
+        <li th:text="${bootcamp.description}"></li>
+        <li th:text="${bootcamp.url}"></li>
+    </ul>
 </div>
 <div class="self-directed-section">
     <h3 class="self-directed-section-header">Learning on Your Own</h3>
