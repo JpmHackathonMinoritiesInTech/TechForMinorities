@@ -17,11 +17,13 @@ public class SelfDirected {
     private String description;
     @Lob
     private String url;
+    private String paidOrFree;
 
-    public SelfDirected(String resourceName, String description, String url) {
+    public SelfDirected(String resourceName, String description, String url, String paidOrFree) {
         this.resourceName = resourceName;
         this.description = description;
         this.url = url;
+        this.paidOrFree = paidOrFree;
     }
 
     public Long getId() {
@@ -38,5 +40,9 @@ public class SelfDirected {
 
     public String getUrl() {
         return url;
+    }
+
+    public String getPaidOrFree() {
+        return paidOrFree;
     }
 }
