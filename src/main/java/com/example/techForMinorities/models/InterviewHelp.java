@@ -18,6 +18,8 @@ public class InterviewHelp {
     @Lob
     private String url;
 
+    public InterviewHelp(){}
+
     public InterviewHelp(String resourceName, String description, String url) {
         this.resourceName = resourceName;
         this.description = description;

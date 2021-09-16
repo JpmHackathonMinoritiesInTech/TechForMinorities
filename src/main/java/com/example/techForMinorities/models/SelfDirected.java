@@ -19,6 +19,8 @@ public class SelfDirected {
     private String url;
     private String paidOrFree;
 
+    public SelfDirected(){}
+
     public SelfDirected(String resourceName, String description, String url, String paidOrFree) {
         this.resourceName = resourceName;
         this.description = description;

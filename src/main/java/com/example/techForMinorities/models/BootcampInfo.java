@@ -17,4 +17,24 @@ public class BootcampInfo {
     private String description;
     @Lob
     private String url;
+
+    public BootcampInfo(){};
+
+    public BootcampInfo(String resourceName, String description, String url) {
+        this.resourceName = resourceName;
+        this.description = description;
+        this.url = url;
+    }
+
+    public String getResourceName() {
+        return resourceName;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getUrl() {
+        return url;
+    }
 }

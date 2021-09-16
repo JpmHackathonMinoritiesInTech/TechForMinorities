@@ -11,7 +11,7 @@ public class Mentors {
     @Id
     @GeneratedValue
     private Long id;
-
+    @Lob
     private String imageUrl;
     private String name;
     private String email;
@@ -21,6 +21,8 @@ public class Mentors {
     private String pathToField;
     @Lob
     private String bio;
+
+    public Mentors(){}
 
     public Mentors(String imageUrl, String name, String email, String linkedIn, String languages, String pathToField, String bio) {
         this.imageUrl = imageUrl;
