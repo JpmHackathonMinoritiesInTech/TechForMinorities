@@ -148,16 +148,28 @@ public class Populator implements CommandLineRunner {
                 "https://www.interviewbit.com/mock-interview/ ");
         interviewHelpRepo.save(interviewHelpMockInterview2);
 
+        BootcampInfo courseReport = new BootcampInfo("Course Report", "Use this site to match yourself up with a bootcamp that fits your learning goals. You can also read reviews for different bootcamps in your area."
+        , "https://coursereport.com/best-coding-bootcamps");
+        bootcampInfoRepo.save(courseReport);
+
+        BootcampInfo scholarshipInfo = new BootcampInfo("Scholarship Information", "If you are wondering how you may be able to pay for a bootcamp, check out this resource. There are many grants and scholarship opportunities for women and minorities!",
+                "https://careerkarma.com/blog/best-coding-bootcamp-scholarships-list");
+        bootcampInfoRepo.save(scholarshipInfo);
+
         BootcampInfo bootcampInfo1 = new BootcampInfo("2021 Best Coding Bootcamps you can join",
                 "Learn more what makes a bootcamp successful.",
                 "https://www.switchup.org/rankings/best-coding-bootcamps"
-                );
-        BootcampInfo bootcampInfo = new BootcampInfo("Are Coding Bootcamps worth it?",
-                "Learn more if coding bootcamp is best option for you",
-                "https://www.bestcolleges.com/bootcamps/guides/are-coding-bootcamps-worth-it/");
+        );
+        bootcampInfoRepo.save(bootcampInfo1);
 
-        BootcampInfo bootcampInfo3 = new BootcampInfo("Why many people choose bootcamp?",
-                "Learn coding-controll your future",
+        BootcampInfo bootcampInfo2 = new BootcampInfo("Are coding boot camps worth it?",
+                "Learn if coding boot camps are the best option for you",
+                "https://www.bestcolleges.com/bootcamps/guides/are-coding-bootcamps-worth-it/");
+        bootcampInfoRepo.save(bootcampInfo2);
+
+        BootcampInfo bootcampInfo3 = new BootcampInfo("Why do many people choose boot camps?",
+                "Learn coding to control your future.",
                 "https://www.techelevator.com/?gclid=Cj0KCQjw1ouKBhC5ARIsAHXNMI-WwG4SNH4QLvtEOtaUI7Opr_JxIbRpAp4BAHF523-u682pTEN3WXkaAoLpEALw_wcB");
+        bootcampInfoRepo.save(bootcampInfo3);
     }
 }
