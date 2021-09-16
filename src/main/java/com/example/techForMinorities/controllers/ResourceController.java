@@ -33,4 +33,9 @@ public class ResourceController {
 
         return "resources.html";
     }
+
+    @GetMapping("/")
+    public String displayHomePage(){
+        return "index.html";
+    }
 }
