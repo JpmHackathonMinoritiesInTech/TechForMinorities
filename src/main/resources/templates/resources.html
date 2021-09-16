@@ -5,6 +5,17 @@
     <title>Tech For Minorities - Resources</title>
 </head>
 <body>
-    Hello World
+    <div class="mentor-section">
+        <h3 class="mentor-section-header">Find A Mentor</h3>
+        <ul th:each="mentor:${mentorResources}">
+            <li><img th:src="${mentor.imageUrl}"></li>
+            <li th:text="${mentor.name}"></li>
+            <li th:text="${mentor.email}"></li>
+            <li th:text="${mentor.linkedIn}"></li>
+            <li th:text="${mentor.languages}"></li>
+            <li th:text="${mentor.pathToField}"></li>
+            <li th:text="${mentor.bio}"></li>
+        </ul>
+    </div>
 </body>
 </html>
