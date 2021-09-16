@@ -1,0 +1,33 @@
+SelfDirected selfDirectedResource2 = new SelfDirected("Khan Academy", "A great resource for learning programming concepts with an incredible suite of math courses if your programming goals require it.", "https://www.khanacademy.org/", "Free")
+selfDirectedRepo.save(selfDirectedResource2);
+
+SelfDirected selfDirectedResource3 = new SelfDirected("University of Helsinki MOOC Java", "A Massive Open Online Course (MOOC) offered by the University of Helsinki. It offers in-depth Java coursework, including foundational skills that will be transferrable to other languages.", "https://java-programming.mooc.fi/", "Free")
+selfDirectedRepo.save(selfDirectedResource3);
+
+SelfDirected selfDirectedResource4 = new SelfDirected("MIT Open Courseware", "A free collection of historical coursework from MIT. Subjects include but are not limited to Computer Science.", "https://ocw.mit.edu/courses/find-by-topic/#cat=engineering&subcat=computerscience", "Free")
+selfDirectedRepo.save(selfDirectedResource4);
+
+SelfDirected selfDirectedResource5 = new SelfDirected("Youtube", "There are a huge number of tutorial videos that can help you along no matter what stage you are at in your learning journey.", "youtube.com", "Free")
+selfDirectedRepo.save(selfDirectedResource5);
+
+SelfDirected selfDirectedResource6 = new SelfDirected("The Odin Project", "A free, open source introduction to fundamental coding concepts and deeper project-based coursework.", "https://www.theodinproject.com", "Free")
+selfDirectedRepo.save(selfDirectedResource6);
+
+SelfDirected selfDirectedResource7 = new SelfDirected("Your local library", "Always check your local library. There’s a good chance they will have a great selection of written and electronic resources to learn about any number of topics.", "https://www.worldcat.org/libraries", "Free")
+selfDirectedRepo.save(selfDirectedResource7);
+
+SelfDirected selfDirectedResource8 = new SelfDirected("FreeCodeCamp", "This site offers bite-sized (and bigger) courses about a myriad of programming topics, from beginner to expert.", "https://www.freecodecamp.org/", "Free")
+selfDirectedRepo.save(selfDirectedResource8);
+
+SelfDirected selfDirectedResource9 = new SelfDirected("Udemy", "A trove of online learning courses about programming and more. Courses often go on sale for deep discounts, so make sure to keep an eye on anything you’re interested in.", "https://www.udemy.com/", "Paid")
+selfDirectedRepo.save(selfDirectedResource9);
+
+SelfDirected selfDirectedResource10 = new SelfDirected("App Acadmey", "A comprehensive course designed to prepare you to enter the field of software development on a full- or part-time basis to kickstart your career.", "https://www.appacademy.io/", "Paid")
+selfDirectedRepo.save(selfDirectedResource10);
+
+SelfDirected selfDirectedResource11 = new SelfDirected("Udacity", "An online education portal aimed at developing in-demand skills to get your foot in the door of a new career.", "https://www.udacity.com/", "Paid")
+selfDirectedRepo.save(selfDirectedResource11);
+
+SelfDirected selfDirectedResource12 = new SelfDirected("LinkedIn Learning", "LinkedIn is for more than just networking! If you enroll for their premium membership, you’ll have access to a wide array of coursework, as well, to brush up on your skills.", "https://www.linkedin.com/", "Paid")
+selfDirectedRepo.save(selfDirectedResource12);
+
