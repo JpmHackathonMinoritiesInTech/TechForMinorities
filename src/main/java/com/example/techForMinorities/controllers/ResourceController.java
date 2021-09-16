@@ -17,7 +17,7 @@ public class ResourceController {
     private SelfDirectedRepo selfDirectedRepo;
 
     public ResourceController(BootcampInfoRepo bootcampInfoRepo, InterviewHelpRepo interviewHelpRepo,
-                              MentorsRepo mentorsRepo, SelfDirectedRepo selfDirectedRepo){
+                              MentorsRepo mentorsRepo, SelfDirectedRepo selfDirectedRepo) {
         this.bootcampInfoRepo = bootcampInfoRepo;
         this.interviewHelpRepo = interviewHelpRepo;
         this.mentorsRepo = mentorsRepo;
@@ -25,7 +25,7 @@ public class ResourceController {
     }
 
     @GetMapping("/resources")
-    public String displayResourcesPage(Model model){
+    public String displayResourcesPage(Model model) {
         model.addAttribute("bootCampResources", bootcampInfoRepo.findAll());
         model.addAttribute("interviewHelpResources", interviewHelpRepo.findAll());
         model.addAttribute("mentorResources", mentorsRepo.findAll());
@@ -35,7 +35,17 @@ public class ResourceController {
     }
 
     @GetMapping("/")
-    public String displayHomePage(){
+    public String displayHomePage() {
         return "index.html";
+    }
+
+    @GetMapping("/experience-question")
+    public String displayExperienceQuestionPage() {
+        return "experience-page.html";
+    }
+
+    @GetMapping("/video")
+    public String displayYoutubeVideoPage(){
+        return "youtube-video-page.html";
     }
 }
