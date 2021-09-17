@@ -45,12 +45,12 @@ public class ResourceController {
     }
 
     @GetMapping("/video")
-    public String displayYoutubeVideoPage(){
+    public String displayYoutubeVideoPage() {
         return "youtube-video-page.html";
     }
 
     @GetMapping("/find-resources")
-    public String displayResourceChoices(){
+    public String displayResourceChoices() {
         return "find-resources.html";
     }
 }
