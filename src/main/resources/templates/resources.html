@@ -9,38 +9,37 @@
 <div id="mentor-section" class="content-section">
     <h3 class="mentor-section-header">Find A Mentor</h3>
     <ul class="list-section" th:each="mentor:${mentorResources}">
-        <li><img th:src="${mentor.imageUrl}"></li>
-        <li th:text="${mentor.name}"></li>
-        <li th:text="${mentor.email}"></li>
-        <li th:text="${mentor.linkedIn}"></li>
-        <li th:text="${mentor.languages}"></li>
-        <li th:text="${mentor.pathToField}"></li>
-        <li th:text="${mentor.bio}"></li>
+        <li id="mentor-image"><img th:src="${mentor.imageUrl}"></li>
+        <li th:text="${'My Name: ' + mentor.name}"></li>
+        <li th:text="${'My Email: ' + mentor.email}"></li>
+        <li> <a th:href="${mentor.linkedIn}" th:text="${mentor.linkedIn}"></a></li>
+        <li th:text="${'Languages Spoken: ' + mentor.languages}"></li>
+        <li th:text="${'My Path: ' + mentor.pathToField}"></li>
+        <li th:text="${'My Bio: ' + mentor.bio}"></li>
     </ul>
 </div>
 <div id="bootcamp-section" class="content-section">
     <h3 class="bootcamp-section-header">Bootcamp Overview</h3>
     <ul class="list-section" th:each="bootcamp:${bootCampResources}">
-        <li th:text="${bootcamp.resourceName}"></li>
+        <li><a th:href="${bootcamp.url}" th:text="${bootcamp.resourceName}"></a></li>
         <li th:text="${bootcamp.description}"></li>
-        <li th:text="${bootcamp.url}"></li>
+
     </ul>
 </div>
 <div id="self-directed-section" class="content-section">
     <h3 class="self-directed-section-header">Learning on Your Own</h3>
     <ul class="list-section" th:each="learningSource:${selfDirectedResources}">
-        <li th:text="${learningSource.resourceName}"></li>
+        <li> <a th:href="${learningSource.url}" th:text="${learningSource.resourceName}"></a></li>
         <li th:text="${learningSource.description}"></li>
-        <li th:text="${learningSource.url}"></li>
         <li th:text="${learningSource.paidOrFree}"></li>
     </ul>
 </div>
 <div id="interview-section" class="content-section">
     <h3 class="interview-section-header">Nailing the Interview</h3>
     <ul class="list-section" th:each="interview:${interviewHelpResources}">
-        <li th:text="${interview.resourceName}"></li>
+        <li> <a th:href="${interview.url}" th:text="${interview.resourceName}"></a></li>
         <li th:text="${interview.description}"></li>
-        <li th:text="${interview.url}"></li>
+
     </ul>
 </div>
 
