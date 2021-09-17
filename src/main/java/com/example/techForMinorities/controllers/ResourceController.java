@@ -48,4 +48,9 @@ public class ResourceController {
     public String displayYoutubeVideoPage(){
         return "youtube-video-page.html";
     }
+
+    @GetMapping("/find-resources")
+    public String displayResourceChoices(){
+        return "find-resources.html";
+    }
 }
