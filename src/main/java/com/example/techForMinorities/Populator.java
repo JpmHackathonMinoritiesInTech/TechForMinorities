@@ -156,9 +156,7 @@ public class Populator implements CommandLineRunner {
                 "https://careerkarma.com/blog/best-coding-bootcamp-scholarships-list");
         bootcampInfoRepo.save(scholarshipInfo);
 
-        BootcampInfo bootcampInfo1 = new BootcampInfo("2021 Best Coding Bootcamps you can join",
-                "Learn more what makes a bootcamp successful.",
-                "https://www.switchup.org/rankings/best-coding-bootcamps"
+        BootcampInfo bootcampInfo1 = new BootcampInfo("2021 Best Coding Bootcamps you can join","Learn more what makes a bootcamp successful.","https://www.switchup.org/rankings/best-coding-bootcamps"
         );
         bootcampInfoRepo.save(bootcampInfo1);
 

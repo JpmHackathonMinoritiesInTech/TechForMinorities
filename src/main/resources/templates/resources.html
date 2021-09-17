@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="mentor-section" class="mentor-section">
+<div id="mentor-section" class="content-section">
     <h3 class="mentor-section-header">Find A Mentor</h3>
-    <ul th:each="mentor:${mentorResources}">
+    <ul class="list-section" th:each="mentor:${mentorResources}">
         <li><img th:src="${mentor.imageUrl}"></li>
         <li th:text="${mentor.name}"></li>
         <li th:text="${mentor.email}"></li>
@@ -18,30 +18,36 @@
         <li th:text="${mentor.bio}"></li>
     </ul>
 </div>
-<div id="bootcamp-section" class="bootcamp-section">
+<div id="bootcamp-section" class="content-section">
     <h3 class="bootcamp-section-header">Bootcamp Overview</h3>
-    <ul th:each="bootcamp:${bootCampResources}">
+    <ul class="list-section" th:each="bootcamp:${bootCampResources}">
         <li th:text="${bootcamp.resourceName}"></li>
         <li th:text="${bootcamp.description}"></li>
         <li th:text="${bootcamp.url}"></li>
     </ul>
 </div>
-<div id="self-directed-section" class="self-directed-section">
+<div id="self-directed-section" class="content-section">
     <h3 class="self-directed-section-header">Learning on Your Own</h3>
-    <ul th:each="learningSource:${selfDirectedResources}">
+    <ul class="list-section" th:each="learningSource:${selfDirectedResources}">
         <li th:text="${learningSource.resourceName}"></li>
         <li th:text="${learningSource.description}"></li>
         <li th:text="${learningSource.url}"></li>
         <li th:text="${learningSource.paidOrFree}"></li>
     </ul>
 </div>
-<div id="interview-section" class="interview-section">
+<div id="interview-section" class="content-section">
     <h3 class="interview-section-header">Nailing the Interview</h3>
-    <ul th:each="interview:${interviewHelpResources}">
+    <ul class="list-section" th:each="interview:${interviewHelpResources}">
         <li th:text="${interview.resourceName}"></li>
         <li th:text="${interview.description}"></li>
         <li th:text="${interview.url}"></li>
     </ul>
+</div>
+
+<div id="back-button" class="content-section">
+    <form>
+        <input type="button" value="Go Back" onclick="history.back()">
+    </form>
 </div>
 </body>
 </html>
